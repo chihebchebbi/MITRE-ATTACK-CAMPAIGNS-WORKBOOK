@@ -1,0 +1,313 @@
+﻿sourceID,sourcename,targetID,Matrix
+C0010,C0010,T1584.001,Enterprise
+C0010,C0010,T1583.001,Enterprise
+C0010,C0010,T1189,Enterprise
+C0010,C0010,T1608.004,Enterprise
+C0010,C0010,T1105,Enterprise
+C0010,C0010,T1587.001,Enterprise
+C0010,C0010,T1588.002,Enterprise
+C0010,C0010,T1608.001,Enterprise
+C0010,C0010,T1608.002,Enterprise
+C0011,C0011,T1587.003,Enterprise
+C0011,C0011,T1583.001,Enterprise
+C0011,C0011,T1204.002,Enterprise
+C0011,C0011,T1204.001,Enterprise
+C0011,C0011,T1566.001,Enterprise
+C0011,C0011,T1566.002,Enterprise
+C0011,C0011,T1608.001,Enterprise
+C0011,C0011,T1059.005,Enterprise
+C0015,C0015,T1553.002,Enterprise
+C0015,C0015,T1486,Enterprise
+C0015,C0015,T1030,Enterprise
+C0015,C0015,T1005,Enterprise
+C0015,C0015,T1039,Enterprise
+C0015,C0015,T1069.002,Enterprise
+C0015,C0015,T1482,Enterprise
+C0015,C0015,T1055.001,Enterprise
+C0015,C0015,T1567.002,Enterprise
+C0015,C0015,T1083,Enterprise
+C0015,C0015,T1105,Enterprise
+C0015,C0015,T1059.007,Enterprise
+C0015,C0015,T1570,Enterprise
+C0015,C0015,T1074.001,Enterprise
+C0015,C0015,T1069.001,Enterprise
+C0015,C0015,T1204.002,Enterprise
+C0015,C0015,T1588.001,Enterprise
+C0015,C0015,T1036,Enterprise
+C0015,C0015,T1218.005,Enterprise
+C0015,C0015,T1135,Enterprise
+C0015,C0015,T1027,Enterprise
+C0015,C0015,T1057,Enterprise
+C0015,C0015,T1218.010,Enterprise
+C0015,C0015,T1219,Enterprise
+C0015,C0015,T1021.001,Enterprise
+C0015,C0015,T1018,Enterprise
+C0015,C0015,T1218.011,Enterprise
+C0015,C0015,T1566.001,Enterprise
+C0015,C0015,T1016,Enterprise
+C0015,C0015,T1124,Enterprise
+C0015,C0015,T1588.002,Enterprise
+C0015,C0015,T1059.005,Enterprise
+C0015,C0015,T1059.003,Enterprise
+C0015,C0015,T1047,Enterprise
+C0004,CostaRicto,T1005,Enterprise
+C0004,CostaRicto,T1583.001,Enterprise
+C0004,CostaRicto,T1133,Enterprise
+C0004,CostaRicto,T1105,Enterprise
+C0004,CostaRicto,T1587.001,Enterprise
+C0004,CostaRicto,T1090.003,Enterprise
+C0004,CostaRicto,T1046,Enterprise
+C0004,CostaRicto,T1572,Enterprise
+C0004,CostaRicto,T1053.005,Enterprise
+C0004,CostaRicto,T1588.002,Enterprise
+C0001,Frankenstein,T1119,Enterprise
+C0001,Frankenstein,T1020,Enterprise
+C0001,Frankenstein,T1005,Enterprise
+C0001,Frankenstein,T1140,Enterprise
+C0001,Frankenstein,T1041,Enterprise
+C0001,Frankenstein,T1203,Enterprise
+C0001,Frankenstein,T1105,Enterprise
+C0001,Frankenstein,T1127.001,Enterprise
+C0001,Frankenstein,T1204.002,Enterprise
+C0001,Frankenstein,T1036.004,Enterprise
+C0001,Frankenstein,T1027,Enterprise
+C0001,Frankenstein,T1059.001,Enterprise
+C0001,Frankenstein,T1057,Enterprise
+C0001,Frankenstein,T1053.005,Enterprise
+C0001,Frankenstein,T1518.001,Enterprise
+C0001,Frankenstein,T1566.001,Enterprise
+C0001,Frankenstein,T1573.001,Enterprise
+C0001,Frankenstein,T1497.001,Enterprise
+C0001,Frankenstein,T1082,Enterprise
+C0001,Frankenstein,T1016,Enterprise
+C0001,Frankenstein,T1033,Enterprise
+C0001,Frankenstein,T1221,Enterprise
+C0001,Frankenstein,T1588.002,Enterprise
+C0001,Frankenstein,T1059.005,Enterprise
+C0001,Frankenstein,T1071.001,Enterprise
+C0001,Frankenstein,T1059.003,Enterprise
+C0001,Frankenstein,T1047,Enterprise
+C0007,FunnyDream,T1560.001,Enterprise
+C0007,FunnyDream,T1583.001,Enterprise
+C0007,FunnyDream,T1585.002,Enterprise
+C0007,FunnyDream,T1105,Enterprise
+C0007,FunnyDream,T1588.001,Enterprise
+C0007,FunnyDream,T1057,Enterprise
+C0007,FunnyDream,T1018,Enterprise
+C0007,FunnyDream,T1082,Enterprise
+C0007,FunnyDream,T1016,Enterprise
+C0007,FunnyDream,T1049,Enterprise
+C0007,FunnyDream,T1588.002,Enterprise
+C0007,FunnyDream,T1059.005,Enterprise
+C0007,FunnyDream,T1059.003,Enterprise
+C0007,FunnyDream,T1047,Enterprise
+C0002,Night Dragon,T1005,Enterprise
+C0002,Night Dragon,T1562.001,Enterprise
+C0002,Night Dragon,T1078.002,Enterprise
+C0002,Night Dragon,T1568,Enterprise
+C0002,Night Dragon,T1190,Enterprise
+C0002,Night Dragon,T1133,Enterprise
+C0002,Night Dragon,T1008,Enterprise
+C0002,Night Dragon,T1083,Enterprise
+C0002,Night Dragon,T1105,Enterprise
+C0002,Night Dragon,T1114.001,Enterprise
+C0002,Night Dragon,T1204.001,Enterprise
+C0002,Night Dragon,T1588.001,Enterprise
+C0002,Night Dragon,T1112,Enterprise
+C0002,Night Dragon,T1027,Enterprise
+C0002,Night Dragon,T1550.002,Enterprise
+C0002,Night Dragon,T1110.002,Enterprise
+C0002,Night Dragon,T1219,Enterprise
+C0002,Night Dragon,T1074.002,Enterprise
+C0002,Night Dragon,T1003.002,Enterprise
+C0002,Night Dragon,T1584.004,Enterprise
+C0002,Night Dragon,T1583.004,Enterprise
+C0002,Night Dragon,T1027.002,Enterprise
+C0002,Night Dragon,T1566.002,Enterprise
+C0002,Night Dragon,T1033,Enterprise
+C0002,Night Dragon,T1588.002,Enterprise
+C0002,Night Dragon,T1608.001,Enterprise
+C0002,Night Dragon,T1078,Enterprise
+C0002,Night Dragon,T1071.001,Enterprise
+C0002,Night Dragon,T1059.003,Enterprise
+C0012,Operation CuckooBees,T1560.001,Enterprise
+C0012,Operation CuckooBees,T1574.002,Enterprise
+C0012,Operation CuckooBees,T1005,Enterprise
+C0012,Operation CuckooBees,T1087.002,Enterprise
+C0012,Operation CuckooBees,T1078.002,Enterprise
+C0012,Operation CuckooBees,T1190,Enterprise
+C0012,Operation CuckooBees,T1133,Enterprise
+C0012,Operation CuckooBees,T1083,Enterprise
+C0012,Operation CuckooBees,T1547.006,Enterprise
+C0012,Operation CuckooBees,T1087.001,Enterprise
+C0012,Operation CuckooBees,T1069.001,Enterprise
+C0012,Operation CuckooBees,T1036.005,Enterprise
+C0012,Operation CuckooBees,T1135,Enterprise
+C0012,Operation CuckooBees,T1027,Enterprise
+C0012,Operation CuckooBees,T1201,Enterprise
+C0012,Operation CuckooBees,T1120,Enterprise
+C0012,Operation CuckooBees,T1057,Enterprise
+C0012,Operation CuckooBees,T1018,Enterprise
+C0012,Operation CuckooBees,T1053.005,Enterprise
+C0012,Operation CuckooBees,T1003.002,Enterprise
+C0012,Operation CuckooBees,T1082,Enterprise
+C0012,Operation CuckooBees,T1016,Enterprise
+C0012,Operation CuckooBees,T1049,Enterprise
+C0012,Operation CuckooBees,T1033,Enterprise
+C0012,Operation CuckooBees,T1007,Enterprise
+C0012,Operation CuckooBees,T1124,Enterprise
+C0012,Operation CuckooBees,T1588.002,Enterprise
+C0012,Operation CuckooBees,T1059.005,Enterprise
+C0012,Operation CuckooBees,T1071.001,Enterprise
+C0012,Operation CuckooBees,T1505.003,Enterprise
+C0012,Operation CuckooBees,T1059.003,Enterprise
+C0012,Operation CuckooBees,T1543.003,Enterprise
+C0016,Operation Dust Storm,T1140,Enterprise
+C0016,Operation Dust Storm,T1583.001,Enterprise
+C0016,Operation Dust Storm,T1189,Enterprise
+C0016,Operation Dust Storm,T1568,Enterprise
+C0016,Operation Dust Storm,T1585.002,Enterprise
+C0016,Operation Dust Storm,T1203,Enterprise
+C0016,Operation Dust Storm,T1059.007,Enterprise
+C0016,Operation Dust Storm,T1204.002,Enterprise
+C0016,Operation Dust Storm,T1204.001,Enterprise
+C0016,Operation Dust Storm,T1036,Enterprise
+C0016,Operation Dust Storm,T1218.005,Enterprise
+C0016,Operation Dust Storm,T1027,Enterprise
+C0016,Operation Dust Storm,T1518,Enterprise
+C0016,Operation Dust Storm,T1027.002,Enterprise
+C0016,Operation Dust Storm,T1566.001,Enterprise
+C0016,Operation Dust Storm,T1566.002,Enterprise
+C0016,Operation Dust Storm,T1059.005,Enterprise
+C0006,Operation Honeybee,T1560.001,Enterprise
+C0006,Operation Honeybee,T1548.002,Enterprise
+C0006,Operation Honeybee,T1553.002,Enterprise
+C0006,Operation Honeybee,T1005,Enterprise
+C0006,Operation Honeybee,T1140,Enterprise
+C0006,Operation Honeybee,T1588.004,Enterprise
+C0006,Operation Honeybee,T1583.001,Enterprise
+C0006,Operation Honeybee,T1585.002,Enterprise
+C0006,Operation Honeybee,T1041,Enterprise
+C0006,Operation Honeybee,T1070.004,Enterprise
+C0006,Operation Honeybee,T1071.002,Enterprise
+C0006,Operation Honeybee,T1083,Enterprise
+C0006,Operation Honeybee,T1105,Enterprise
+C0006,Operation Honeybee,T1074.001,Enterprise
+C0006,Operation Honeybee,T1204.002,Enterprise
+C0006,Operation Honeybee,T1036,Enterprise
+C0006,Operation Honeybee,T1036.005,Enterprise
+C0006,Operation Honeybee,T1112,Enterprise
+C0006,Operation Honeybee,T1106,Enterprise
+C0006,Operation Honeybee,T1027,Enterprise
+C0006,Operation Honeybee,T1057,Enterprise
+C0006,Operation Honeybee,T1547.001,Enterprise
+C0006,Operation Honeybee,T1583.004,Enterprise
+C0006,Operation Honeybee,T1569.002,Enterprise
+C0006,Operation Honeybee,T1574.011,Enterprise
+C0006,Operation Honeybee,T1082,Enterprise
+C0006,Operation Honeybee,T1059.005,Enterprise
+C0006,Operation Honeybee,T1059.003,Enterprise
+C0006,Operation Honeybee,T1543.003,Enterprise
+C0013,Operation Sharpshooter,T1559.002,Enterprise
+C0013,Operation Sharpshooter,T1105,Enterprise
+C0013,Operation Sharpshooter,T1204.002,Enterprise
+C0013,Operation Sharpshooter,T1587.001,Enterprise
+C0013,Operation Sharpshooter,T1036.005,Enterprise
+C0013,Operation Sharpshooter,T1106,Enterprise
+C0013,Operation Sharpshooter,T1055,Enterprise
+C0013,Operation Sharpshooter,T1090,Enterprise
+C0013,Operation Sharpshooter,T1547.001,Enterprise
+C0013,Operation Sharpshooter,T1584.004,Enterprise
+C0013,Operation Sharpshooter,T1608.001,Enterprise
+C0013,Operation Sharpshooter,T1059.005,Enterprise
+C0013,Operation Sharpshooter,T1583.006,Enterprise
+C0005,Operation Spalax,T1059,Enterprise
+C0005,Operation Spalax,T1140,Enterprise
+C0005,Operation Spalax,T1583.001,Enterprise
+C0005,Operation Spalax,T1568,Enterprise
+C0005,Operation Spalax,T1204.002,Enterprise
+C0005,Operation Spalax,T1204.001,Enterprise
+C0005,Operation Spalax,T1588.001,Enterprise
+C0005,Operation Spalax,T1027,Enterprise
+C0005,Operation Spalax,T1218.011,Enterprise
+C0005,Operation Spalax,T1027.002,Enterprise
+C0005,Operation Spalax,T1566.001,Enterprise
+C0005,Operation Spalax,T1566.002,Enterprise
+C0005,Operation Spalax,T1027.003,Enterprise
+C0005,Operation Spalax,T1588.002,Enterprise
+C0005,Operation Spalax,T1608.001,Enterprise
+C0005,Operation Spalax,T1497,Enterprise
+C0005,Operation Spalax,T1102,Enterprise
+C0014,Operation Wocao,T1560.001,Enterprise
+C0014,Operation Wocao,T1573.002,Enterprise
+C0014,Operation Wocao,T1119,Enterprise
+C0014,Operation Wocao,T1070.001,Enterprise
+C0014,Operation Wocao,T1115,Enterprise
+C0014,Operation Wocao,T1003.006,Enterprise
+C0014,Operation Wocao,T1001,Enterprise
+C0014,Operation Wocao,T1005,Enterprise
+C0014,Operation Wocao,T1562.004,Enterprise
+C0014,Operation Wocao,T1087.002,Enterprise
+C0014,Operation Wocao,T1078.002,Enterprise
+C0014,Operation Wocao,T1585.002,Enterprise
+C0014,Operation Wocao,T1041,Enterprise
+C0014,Operation Wocao,T1190,Enterprise
+C0014,Operation Wocao,T1133,Enterprise
+C0014,Operation Wocao,T1070.004,Enterprise
+C0014,Operation Wocao,T1083,Enterprise
+C0014,Operation Wocao,T1589,Enterprise
+C0014,Operation Wocao,T1027.005,Enterprise
+C0014,Operation Wocao,T1105,Enterprise
+C0014,Operation Wocao,T1090.001,Enterprise
+C0014,Operation Wocao,T1016.001,Enterprise
+C0014,Operation Wocao,T1558.003,Enterprise
+C0014,Operation Wocao,T1056.001,Enterprise
+C0014,Operation Wocao,T1003.001,Enterprise
+C0014,Operation Wocao,T1570,Enterprise
+C0014,Operation Wocao,T1078.003,Enterprise
+C0014,Operation Wocao,T1074.001,Enterprise
+C0014,Operation Wocao,T1069.001,Enterprise
+C0014,Operation Wocao,T1587.001,Enterprise
+C0014,Operation Wocao,T1036.005,Enterprise
+C0014,Operation Wocao,T1112,Enterprise
+C0014,Operation Wocao,T1111,Enterprise
+C0014,Operation Wocao,T1090.003,Enterprise
+C0014,Operation Wocao,T1106,Enterprise
+C0014,Operation Wocao,T1046,Enterprise
+C0014,Operation Wocao,T1135,Enterprise
+C0014,Operation Wocao,T1095,Enterprise
+C0014,Operation Wocao,T1571,Enterprise
+C0014,Operation Wocao,T1027,Enterprise
+C0014,Operation Wocao,T1555.005,Enterprise
+C0014,Operation Wocao,T1120,Enterprise
+C0014,Operation Wocao,T1059.001,Enterprise
+C0014,Operation Wocao,T1552.004,Enterprise
+C0014,Operation Wocao,T1057,Enterprise
+C0014,Operation Wocao,T1055,Enterprise
+C0014,Operation Wocao,T1090,Enterprise
+C0014,Operation Wocao,T1059.006,Enterprise
+C0014,Operation Wocao,T1012,Enterprise
+C0014,Operation Wocao,T1018,Enterprise
+C0014,Operation Wocao,T1021.002,Enterprise
+C0014,Operation Wocao,T1053.005,Enterprise
+C0014,Operation Wocao,T1518.001,Enterprise
+C0014,Operation Wocao,T1583.004,Enterprise
+C0014,Operation Wocao,T1569.002,Enterprise
+C0014,Operation Wocao,T1518,Enterprise
+C0014,Operation Wocao,T1082,Enterprise
+C0014,Operation Wocao,T1016,Enterprise
+C0014,Operation Wocao,T1049,Enterprise
+C0014,Operation Wocao,T1033,Enterprise
+C0014,Operation Wocao,T1007,Enterprise
+C0014,Operation Wocao,T1124,Enterprise
+C0014,Operation Wocao,T1588.002,Enterprise
+C0014,Operation Wocao,T1078,Enterprise
+C0014,Operation Wocao,T1059.005,Enterprise
+C0014,Operation Wocao,T1071.001,Enterprise
+C0014,Operation Wocao,T1505.003,Enterprise
+C0014,Operation Wocao,T1059.003,Enterprise
+C0014,Operation Wocao,T1047,Enterprise
+C0009,Oldsmar Treatment Plant Intrusion,T0823,ICS
+C0009,Oldsmar Treatment Plant Intrusion,T0831,ICS
+C0009,Oldsmar Treatment Plant Intrusion,T0836,ICS
+C0009,Oldsmar Treatment Plant Intrusion,T0886,ICS
