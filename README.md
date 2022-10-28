@@ -15,3 +15,9 @@ Now you can evaluate your Microsoft Sentinel Analytics coverage against the diff
 <p align="center">
 <img src="Static/screen.png?raw=true" alt="logo" style="width:1400px"></a>
 </p>
+<p align="center">
+<img src="Static/screen2.png?raw=true" alt="logo" style="width:1400px"></a>
+</p>
+<p align="center">
+<img src="Static/screen3.png?raw=true" alt="logo" style="width:1400px"></a>
+</p>
