@@ -1,0 +1,439 @@
+{
+  "version": "Notebook/1.0",
+  "items": [
+    {
+      "type": 1,
+      "content": {
+        "json": "<p align=\"center\">\n<img src=\"https://i.imgur.com/VfXMutn.png\" alt=\"logo\" style=\"width:1400px\"></a>\n</p>\n\n# MITRE ATT&CK CAMPAIGNS WORKBOOK\n---\n\nFor the purposes of the Campaigns page, the MITRE ATT&CK team uses the term Campaign to describe any grouping of intrusion activity conducted over a specific period of time with common targets and objectives. Unnamed intrusion activity is cited using a unique ATT&CK identifier, otherwise the team will use the activity name as noted in public reporting. For named Campaigns, the team makes a best effort to track overlapping names, which are designated as “Associated Campaigns” on each page, as we believe these overlaps are useful for analysts. Campaign entries will also be attributed to ATT&CK Group and Software pages, when possible, based on public reporting; unattributed activity will simply reference “threat actors” in the procedure example.\n\nReference: https://attack.mitre.org/campaigns/ "
+      },
+      "name": "text - 2"
+    },
+    {
+      "type": 3,
+      "content": {
+        "version": "KqlItem/1.0",
+        "query": "_GetWatchlist('ATTACKcampaignsTTP')\n| summarize count() by sourcename\n//| project-away count_\n",
+        "size": 3,
+        "title": "CAMPAIGNS BY TTP",
+        "timeContext": {
+          "durationMs": 86400000
+        },
+        "queryType": 0,
+        "resourceType": "microsoft.operationalinsights/workspaces",
+        "visualization": "tiles",
+        "tileSettings": {
+          "titleContent": {
+            "columnMatch": "sourcename",
+            "formatter": 1
+          },
+          "leftContent": {
+            "columnMatch": "count_",
+            "formatter": 12,
+            "formatOptions": {
+              "palette": "auto"
+            },
+            "numberFormat": {
+              "unit": 17,
+              "options": {
+                "maximumSignificantDigits": 3,
+                "maximumFractionDigits": 2
+              }
+            }
+          },
+          "showBorder": false
+        }
+      },
+      "customWidth": "70",
+      "name": "query - 3"
+    },
+    {
+      "type": 3,
+      "content": {
+        "version": "KqlItem/1.0",
+        "query": "_GetWatchlist('ATTACKcampaignsTTP')\n| summarize count() by sourcename\n",
+        "size": 3,
+        "title": "CAMPAIGNS BY TTP",
+        "timeContext": {
+          "durationMs": 86400000
+        },
+        "queryType": 0,
+        "resourceType": "microsoft.operationalinsights/workspaces",
+        "visualization": "piechart",
+        "tileSettings": {
+          "titleContent": {
+            "columnMatch": "sourcename",
+            "formatter": 1
+          },
+          "leftContent": {
+            "columnMatch": "count_",
+            "formatter": 12,
+            "formatOptions": {
+              "palette": "auto"
+            },
+            "numberFormat": {
+              "unit": 17,
+              "options": {
+                "maximumSignificantDigits": 3,
+                "maximumFractionDigits": 2
+              }
+            }
+          },
+          "showBorder": false
+        }
+      },
+      "customWidth": "30",
+      "name": "query - 3 - Copy"
+    },
+    {
+      "type": 3,
+      "content": {
+        "version": "KqlItem/1.0",
+        "query": "_GetWatchlist('ATTACKcampaignsTTP')\n| where isnotempty(targetID)\n| extend targetID = tostring(targetID)\n| join kind=innerunique (\n    _GetWatchlist('TechniquesV12')\n    | extend Techniques = tostring(Techniques)\n    | project Techniques,TechniqueName\n)\non $left.targetID == $right.Techniques\n| project sourcename ,targetID,TechniqueName\n| order by sourcename\n",
+        "size": 0,
+        "title": "ENTERPRISE TTP",
+        "timeContext": {
+          "durationMs": 86400000
+        },
+        "queryType": 0,
+        "resourceType": "microsoft.operationalinsights/workspaces",
+        "gridSettings": {
+          "labelSettings": [
+            {
+              "columnId": "sourcename",
+              "label": "CAMPAIGN"
+            },
+            {
+              "columnId": "targetID",
+              "label": "TECHNIQUE ID"
+            },
+            {
+              "columnId": "TechniqueName",
+              "label": "TECHNIQUE DESCRIPTION"
+            }
+          ]
+        },
+        "tileSettings": {
+          "showBorder": false,
+          "titleContent": {
+            "columnMatch": "SearchKey",
+            "formatter": 1
+          },
+          "leftContent": {
+            "columnMatch": "count_",
+            "formatter": 12,
+            "formatOptions": {
+              "palette": "auto"
+            },
+            "numberFormat": {
+              "unit": 17,
+              "options": {
+                "maximumSignificantDigits": 3,
+                "maximumFractionDigits": 2
+              }
+            }
+          }
+        }
+      },
+      "customWidth": "70",
+      "name": "query - 3 - Copy"
+    },
+    {
+      "type": 3,
+      "content": {
+        "version": "KqlItem/1.0",
+        "query": "_GetWatchlist('ATTACKcampaignsTTP')\n| summarize count() by Matrix\n",
+        "size": 0,
+        "title": "TTP BY MATRIX",
+        "timeContext": {
+          "durationMs": 86400000
+        },
+        "queryType": 0,
+        "resourceType": "microsoft.operationalinsights/workspaces",
+        "visualization": "barchart",
+        "tileSettings": {
+          "showBorder": false,
+          "titleContent": {
+            "columnMatch": "SearchKey",
+            "formatter": 1
+          },
+          "leftContent": {
+            "columnMatch": "count_",
+            "formatter": 12,
+            "formatOptions": {
+              "palette": "auto"
+            },
+            "numberFormat": {
+              "unit": 17,
+              "options": {
+                "maximumSignificantDigits": 3,
+                "maximumFractionDigits": 2
+              }
+            }
+          }
+        }
+      },
+      "customWidth": "30",
+      "name": "query - 3 - Copy - Copy"
+    },
+    {
+      "type": 9,
+      "content": {
+        "version": "KqlParameterItem/1.0",
+        "crossComponentResources": [
+          "/subscriptions/8233b7b2-062a-490e-a452-7644253942a2/resourcegroups/sentinel/providers/microsoft.operationalinsights/workspaces/sentinel"
+        ],
+        "parameters": [
+          {
+            "id": "ef2da187-2a67-47a2-affc-5e8e0fc4e144",
+            "version": "KqlParameterItem/1.0",
+            "name": "Subscription",
+            "type": 6,
+            "isRequired": true,
+            "query": "summarize by subscriptionId\n| project value = strcat(\"/subscriptions/\", subscriptionId), label = subscriptionId",
+            "crossComponentResources": [
+              "value::all"
+            ],
+            "typeSettings": {
+              "additionalResourceOptions": [],
+              "showDefault": false
+            },
+            "timeContext": {
+              "durationMs": 86400000
+            },
+            "queryType": 1,
+            "resourceType": "microsoft.resourcegraph/resources",
+            "value": "/subscriptions/8233b7b2-062a-490e-a452-7644253942a2"
+          },
+          {
+            "id": "8ef98bec-1f74-4f7d-ad27-28354e61d4f1",
+            "version": "KqlParameterItem/1.0",
+            "name": "Resourcegroup",
+            "label": "Resource group",
+            "type": 1,
+            "isRequired": true,
+            "timeContext": {
+              "durationMs": 86400000
+            },
+            "value": "sentinel"
+          },
+          {
+            "id": "e211bbc3-f46e-493c-a51e-dc84e2162f63",
+            "version": "KqlParameterItem/1.0",
+            "name": "subscriptionId",
+            "type": 1,
+            "query": "where type =~ 'microsoft.operationalinsights/workspaces'\n| take 1\n| project subscriptionId",
+            "isHiddenWhenLocked": true,
+            "timeContext": {
+              "durationMs": 86400000
+            },
+            "queryType": 1,
+            "resourceType": "microsoft.resourcegraph/resources"
+          },
+          {
+            "id": "ae35d308-eb87-4deb-99b0-1c1908f5a346",
+            "version": "KqlParameterItem/1.0",
+            "name": "Workspace",
+            "type": 1,
+            "isRequired": true,
+            "timeContext": {
+              "durationMs": 86400000
+            },
+            "value": "sentinel"
+          }
+        ],
+        "style": "above",
+        "queryType": 0,
+        "resourceType": "microsoft.resourcegraph/resources"
+      },
+      "name": "parameters - 2"
+    },
+    {
+      "type": 3,
+      "content": {
+        "version": "KqlItem/1.0",
+        "query": "{\"version\":\"ARMEndpoint/1.0\",\"data\":null,\"headers\":[],\"method\":\"GET\",\"path\":\"/subscriptions/{subscriptionId}/resourceGroups/{Resourcegroup}/providers/Microsoft.OperationalInsights/workspaces/{Workspace}/providers/Microsoft.SecurityInsights/alertRules\",\"urlParams\":[{\"key\":\"api-version\",\"value\":\"2021-10-01-preview\"}],\"batchDisabled\":false,\"transformers\":[{\"type\":\"jsonpath\",\"settings\":{\"tablePath\":\"$.value\",\"columns\":[{\"path\":\"$.properties.displayName\",\"columnid\":\"RuleName\"},{\"path\":\"$.properties.description\",\"columnid\":\"Description\"},{\"path\":\"$.kind\",\"columnid\":\"RuleType\"},{\"path\":\"$.properties.tactics\",\"columnid\":\"Tactics\"},{\"path\":\"$.properties.techniques[*]\",\"columnid\":\"Techniques\"},{\"path\":\"$.properties.enabled\",\"columnid\":\"Status\"}]}}]}",
+        "size": 0,
+        "title": "MICROSOFT SENTINEL ANALYTICS",
+        "showRefreshButton": true,
+        "showExportToExcel": true,
+        "queryType": 12,
+        "gridSettings": {
+          "formatters": [
+            {
+              "columnMatch": "RuleType",
+              "formatter": 18,
+              "formatOptions": {
+                "thresholdsOptions": "icons",
+                "thresholdsGrid": [
+                  {
+                    "operator": "==",
+                    "thresholdValue": "Anomaly",
+                    "representation": "trendup",
+                    "text": "{0}{1}"
+                  },
+                  {
+                    "operator": "==",
+                    "thresholdValue": "Scheduled",
+                    "representation": "Alert",
+                    "text": "{0}{1}"
+                  },
+                  {
+                    "operator": "==",
+                    "thresholdValue": "NRT",
+                    "representation": "",
+                    "text": "{0}{1}"
+                  },
+                  {
+                    "operator": "==",
+                    "thresholdValue": "MicrosoftSecurityIncidentCreation",
+                    "representation": "AzurePortal",
+                    "text": "{0}{1}"
+                  },
+                  {
+                    "operator": "==",
+                    "thresholdValue": "Fusion",
+                    "representation": "PowerUp",
+                    "text": "{0}{1}"
+                  },
+                  {
+                    "operator": "Default",
+                    "thresholdValue": null,
+                    "representation": "success",
+                    "text": "{0}{1}"
+                  }
+                ]
+              }
+            },
+            {
+              "columnMatch": "Status",
+              "formatter": 18,
+              "formatOptions": {
+                "thresholdsOptions": "icons",
+                "thresholdsGrid": [
+                  {
+                    "operator": "==",
+                    "thresholdValue": "true",
+                    "representation": "success",
+                    "text": "ENABLED"
+                  },
+                  {
+                    "operator": "==",
+                    "thresholdValue": "false",
+                    "representation": "cancelled",
+                    "text": "DISABLED"
+                  },
+                  {
+                    "operator": "Default",
+                    "thresholdValue": null,
+                    "representation": "more",
+                    "text": "{0}{1}"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "name": "ANALYTICS"
+    },
+    {
+      "type": 1,
+      "content": {
+        "json": "## MICROSOFT SENTINEL COVERAGE AGAINST CAMPAIGNS"
+      },
+      "name": "text - 8"
+    },
+    {
+      "type": 9,
+      "content": {
+        "version": "KqlParameterItem/1.0",
+        "parameters": [
+          {
+            "id": "1aafdfc8-9adc-4499-b7d7-767f7646e4b8",
+            "version": "KqlParameterItem/1.0",
+            "name": "CAMPAIGNS",
+            "type": 2,
+            "multiSelect": true,
+            "quote": "'",
+            "delimiter": ",",
+            "query": "_GetWatchlist('ATTACKcampaignsTTP')\n| summarize count() by sourcename\n| project-away count_",
+            "typeSettings": {
+              "additionalResourceOptions": [
+                "value::all"
+              ],
+              "showDefault": false
+            },
+            "timeContext": {
+              "durationMs": 86400000
+            },
+            "queryType": 0,
+            "resourceType": "microsoft.operationalinsights/workspaces",
+            "value": [
+              "value::all"
+            ]
+          }
+        ],
+        "style": "above",
+        "queryType": 0,
+        "resourceType": "microsoft.operationalinsights/workspaces"
+      },
+      "name": "parameters - 5"
+    },
+    {
+      "type": 1,
+      "content": {
+        "json": "These TTPs cannot be detected by your Microsoft Sentinel Analytics: "
+      },
+      "name": "text - 9"
+    },
+    {
+      "type": 3,
+      "content": {
+        "version": "KqlItem/1.0",
+        "query": "_GetWatchlist('ATTACKcampaignsTTP')\n| where isnotempty(targetID)\n| where sourcename in ({CAMPAIGNS}) \n| extend targetID = tostring(targetID)\n| join kind=leftanti (\n_GetWatchlist('Coverage')\n) on $left.targetID == $right.ATTACKTechniques\n| project sourcename ,targetID",
+        "size": 0,
+        "timeContext": {
+          "durationMs": 86400000
+        },
+        "queryType": 0,
+        "resourceType": "microsoft.operationalinsights/workspaces",
+        "gridSettings": {
+          "labelSettings": [
+            {
+              "columnId": "sourcename",
+              "label": "CAMPAIGN"
+            },
+            {
+              "columnId": "targetID",
+              "label": "TECHNIQUE ID"
+            }
+          ]
+        }
+      },
+      "customWidth": "50",
+      "name": "query - 10"
+    },
+    {
+      "type": 3,
+      "content": {
+        "version": "KqlItem/1.0",
+        "query": "_GetWatchlist('ATTACKcampaignsTTP')\n| where isnotempty(targetID)\n| where sourcename in ({CAMPAIGNS})\n| extend targetID = tostring(targetID)\n| join kind=leftanti (\n_GetWatchlist('Coverage')\n) on $left.targetID == $right.ATTACKTechniques\n| project sourcename ,targetID\n| summarize count() by sourcename\n| order by count_ desc",
+        "size": 0,
+        "title": "NON COVERED TTP ",
+        "timeContext": {
+          "durationMs": 86400000
+        },
+        "queryType": 0,
+        "resourceType": "microsoft.operationalinsights/workspaces",
+        "visualization": "categoricalbar"
+      },
+      "customWidth": "50",
+      "name": "query - 10 - Copy"
+    }
+  ],
+  "fallbackResourceIds": [
+    ""
+  ],
+  "fromTemplateId": "sentinel-UserWorkbook",
+  "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/workbook.json"
+}
